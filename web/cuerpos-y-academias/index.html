@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cuerpos y Academias</title>
+        <link rel="stylesheet" href="../styles/cya.css">
+        <link rel="stylesheet" href="../styles/mediaquerys.css">
+        <link rel="icon" href="../assets/logo.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header class="cya-header">
+            <h1>Cuerpos y Academias</h1>
+        </header>
+
+        <main>
+            <div class="academias-container">
+                <div class="title"><span></span><h2>ACADEMIAS</h2><span></span></div>
+                
+                <div class="academia card">
+                    <div class="name">
+                        <img src="../assets/academia-judicial.png">
+                        <h3>ACADEMIA JUDICIAL</h3>
+                    </div>
+                    <div class="description">
+                        <h4>Academia Judicial</h4>
+                        <p>Una academia judicial es una instituciónn dedicada a la formación y capacitación de jueces, magistrados, fiscales y otros profesionales del ámbito judicial. Su objetivo principal es proporcionar la preparación necesaria para desempeñar funciones judiciales de manera eficaz y conforme a la ley.</p>
+                    </div>
+                </div>
+
+                <!-- <div class="academia card">
+                    <div class="name">
+                        <img src="../assets/logo.png">
+                        <h3>ACADEMIA UMI</h3>
+                    </div>
+                    <div class="description">
+                        <h4>Academia UMI</h4>
+                        <p>Una academia militar, Academia umi es la academia del Ejercito De Honor pero para UMI, lugar construido dentro del juego para simular una instituciÃ³n militar. Puede ser diseÃ±ada por los jugadores para recrear un entorno similar al de una academia militar real, donde los jugadores pueden entrenar, desempeÃ±ar sus conocimientos, aprender sobre tÃ¡cticas militares y participar en simulaciones de combate.</p>
+                    </div>
+                </div> -->
+                <!-- NUEVA ACADEMIA -->
+            </div>
+
+            <div class="cuerpos-container">
+                <div class="title"><span></span><h2>CUERPOS</h2><span></span></div>
+
+                <div class="cuerpo card">
+                    <div class="name">
+                        <img src="../assets/cuerpo-instrucciones.png">
+                        <h3>CUERPO DE INSTRUCCIONES</h3>
+                    </div>
+                    <div class="description">
+                        <h4>Cuerpo de Instrucciones</h4>
+                        <p>El cuerpo de instrucciones puede incluir diversas áreas, como tácticas de combate, procedimientos de seguridad, protocolos de comunicación, mantenimiento de equipo, entre otros aspectos relevantes para la preparación y el despliegue operacional de la unidad. Estas instrucciones suelen ser elaboradas por el mando militar y estan diseñadas para asegurar que todos los miembros de la unidad esten familiarizados y sean capaces de cumplir con los estandarres establecidos.</p>
+                    </div>
+                </div>
+
+                <div class="cuerpo card">
+                    <div class="name">
+                        <img src="../assets/escudo-arquitectura.png">
+                        <h3>CUERPO DE ARQUITECTURA</h3>
+                    </div>
+                    <div class="description">
+                        <h4>Cuerpo de Arquitectura</h4>
+                        <p>Nuestro cuerpo de arquitectura contara con 2 grupos que manejaran distintos tipos de monumentos historicos y/o contrucciones historicas, dentro de la faccion militar. El cuerpo sirve para que el ambiente dentro del videojuego sea agradable, seguro y funcional.</p>
+                    </div>
+                </div>
+
+                <div class="cuerpo card">
+                    <div class="name">
+                        <img src="../assets/cuerpo-operaciones.png">
+                        <h3>CUERPO DE OPERACIONES</h3>
+                    </div>
+                    <div class="description">
+                        <h4>Cuerpo de Operaciones</h4>
+                        <p>El cuerpo de operaciones puede incluir una variedad de especialidades y funciones, que van desde la planificación de operaciones y la inteligencia militar hasta la logistica y el apoyo de combate. Estas unidades suelen estar compuestas por personal altamente capacitado y experimentado en diferentes areas operativas.</p>
+                    </div>
+                </div>
+                <!-- NUEVO CUERPO -->
+            </div> 
+        </main>
+
+        <footer>
+            <div class="social">
+                <a href="https://www.youtube.com/channel/UCO7y1HzpV4ITojmDYcTyZ7g" target="_blank" class="yt"><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.tiktok.com/@b.d.h_oficial" target="_blank" class="tk"><i class='bx bxl-tiktok'></i></a>
+                <a href="www.instagram.com/ejercito_de_honor" target="_blank" class="ig"><i class='bx bxl-instagram'></i></a>
+            </div>
+
+            <div class="creador-web">
+                <a href="https://adriiiaa12.github.io" target="_blank">Creador Web : adriiiaa12</a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Ejército de Honor - All rights reserved</p>
+            </div>
+        </footer>
+
+        <script>
+            allCards = document.querySelectorAll('.card');
+            allCards.forEach(e => {
+                e.addEventListener('mouseenter', function() {
+                    const description = e.querySelector('.description');
+                    description.classList.add('active');
+                });
+
+                e.addEventListener('mouseleave', function() {
+                    const description = e.querySelector('.description');
+                    description.classList.remove('active');
+                });
+            });
+        </script>
+    </body>
+</html>
